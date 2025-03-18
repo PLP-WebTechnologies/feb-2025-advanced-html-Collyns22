@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week-2 Assignment</title>
+  </head>
+  <body>
+    <!-- Ordered list with roman numerals -->
+    <h3>An ordered list using Roman numerial</h3>
+    <ol type="I">
+      <li>Apple</li>
+      <li>Samsung</li>
+      <li>Motorolla</li>
+      <li>Sony Ericson</li>
+      <li>Tesla</li>
+      <li>Nokia</li>
+    </ol>
+
+    <!-- external image from Pexels -->
+    <h3>External image from pexels</h3>
+    <img
+      src="https://images.pexels.com/photos/31197867/pexels-photo-31197867/free-photo-of-young-woman-embracing-nature-in-springtime.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+      alt="Photo of a young woman"
+    />
+    <br /><br />
+
+    <!-- Table containing 5 contacts -->
+
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Address</th>
+          <th>Mobile</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Ogechi Onah</td>
+          <td>34 Balogun Street, Lagos</td>
+          <td>+2349024573613</td>
+          <td>onahogechi@gmail.com</td>
+        </tr>
+        <tr>
+          <td>Joy Benjamin</td>
+          <td>12 Kings street, Victoria Island</td>
+          <td>+2347045998978</td>
+          <td>joy22@yahoo.com</td>
+        </tr>
+        <tr>
+          <td>Kelechi James</td>
+          <td>44 Housing Estate, Accra Ghana</td>
+          <td>+23342635142</td>
+          <td>jameskelechi@gmail.com</td>
+        </tr>
+        <tr>
+          <td>Collins Omeihe</td>
+          <td>88 Dolphine Estste Ikoyi Lagos</td>
+          <td>+23439462513</td>
+          <td>collyns22@yahoo.com</td>
+        </tr>
+        <tr>
+          <td>West Brown</td>
+          <td>102 Houston TX, London</td>
+          <td>44(0)345263734</td>
+          <td>westbrown@yahoo.com</td>
+        </tr>
+        <br /><br />
+
+        <!-- Registration Form -->
+        <h3>Registration form</h3>
+
+        <form action="/submit" method="post">
+          <div>
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+          <br />
+          <div>
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+          <br />
+          <div>
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Enter Password"
+              required
+            />
+          </div>
+          <br />
+          <div>
+            <label for="date">Date</label>
+            <input
+              type="date"
+              id="date"
+              name="date"
+              placeholder="YY-MM-DD"
+              required
+            />
+          </div>
+          <br />
+          <!-- adding a dropdown list-->
+          <div>
+            <label for="gender">Gender</label>
+            <select id="gender" name="gender" required>
+              <option value="">Select...</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+          </div>
+          <br />
+          <!-- Radio buttons for job status -->
+          <div>
+            <label
+              >Marital Status:
+              <input
+                type="radio"
+                id="single"
+                name="maritalStatus"
+                value="single"
+                required
+              />
+              <label for="employed">Single</label><br />
+              <input
+                type="radio"
+                id="married"
+                name="maritalStatus"
+                value="Married"
+                required
+              />
+              <label for="unemployed">Married</label><br />
+              <input
+                type="radio"
+                id="divorced"
+                name="maritalStatus"
+                value="divorced"
+                required
+              />
+              <label for="student">Divorced</label>
+            </label>
+          </div>
+          <br />
+          <!-- Adding a Checkbox -->
+          <div class="form-group">
+            <label>I agree to the Terms of Service</label>
+            <input type="checkbox" id="terms" name="terms" required />
+          </div>
+          <br />
+          <!-- Submit button -->
+          <button>Register</button>
+
+          <button>Reset</button>
+        </form>
+        <br /><br />
+        <h3>A table with 5 contacts</h3>
+
+        <!-- Proper indentation and comments are used throughout the code for clarity -->
+      </tbody>
+    </table>
+  </body>
+</html>
